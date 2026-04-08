@@ -440,11 +440,6 @@ export default function Presentation({ slides, onSwitchToDashboard }: Presentati
         </div>
         
         <div className="flex flex-wrap gap-2 md:gap-8 items-center w-full md:w-auto justify-between md:justify-end">
-          {slide?.audioUrl && (
-            <div className="flex items-center bg-surface-container-lowest rounded-full px-2 py-1 shadow-sm border border-surface-container-highest">
-              <audio src={slide.audioUrl} controls className="h-7 w-28 md:h-8 md:w-48" />
-            </div>
-          )}
           <div className="hidden md:flex gap-6 items-center">
             <button 
               onClick={() => setModalContent({ title: 'Notlar', content: slide?.notes || 'Bu slayt için özel not bulunmuyor.' })}
