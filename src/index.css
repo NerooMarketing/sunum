@@ -1,0 +1,68 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&family=Be+Vietnam+Pro:wght@400;500;700&family=Lexend:wght@400;500;700&display=swap');
+
+@theme {
+  --color-primary: #005caa;
+  --color-primary-dim: #005095;
+  --color-primary-container: #5aa2ff;
+  --color-on-primary-container: #002347;
+  --color-on-primary: #eef3ff;
+  
+  --color-secondary: #7c3aed;
+  --color-secondary-dim: #6d28d9;
+  --color-secondary-container: #ddd6fe;
+  --color-secondary-fixed: #7c3aed;
+  --color-on-secondary-fixed: #ffffff;
+  --color-on-secondary: #ffffff;
+  
+  --color-tertiary: #006b1b;
+  
+  --color-background: #f6f6ff;
+  --color-on-background: #1e2e51;
+  
+  --color-surface: #f6f6ff;
+  --color-surface-container-low: #eef0ff;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-highest: #d1dcff;
+  --color-on-surface: #1e2e51;
+  --color-on-surface-variant: #4c5b81;
+
+  --font-headline: 'Plus Jakarta Sans', sans-serif;
+  --font-body: 'Be Vietnam Pro', sans-serif;
+  --font-label: 'Lexend', sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-background);
+  color: var(--color-on-background);
+  background-image: url('https://images.hdqwalls.com/download/steve-minecraft-4k-1z-1920x1080.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+@utility no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@utility custom-scrollbar {
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.2);
+  }
+}
